@@ -1,0 +1,34 @@
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName="Cleansweeper"]/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisite>BasicMechtech</researchPrerequisite>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName="Cleansweeper"]/ingredients</xpath>
+		<value>
+			<ingredients Inherit="False">
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>100</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>SubcoreBasic</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+	
+</Patch>
